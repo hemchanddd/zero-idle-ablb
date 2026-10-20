@@ -1,0 +1,6 @@
+{
+  "RunConfig": {
+    "Memory": "64M",
+    "CPUs": 1
+  }
+}

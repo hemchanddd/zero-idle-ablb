@@ -1,0 +1,13 @@
+
+
+Figure 1. Active-boot request lifecycle: seven stages from arrival to teardown, with aggregate guest memory returning to zero after every response.
+
+Figure 2. Unikernel guest anatomy: Nanos kernel and static ELF HTTP server inside a 64 MB KVM microVM, with readiness signalled over the serial console rather than the network stack.
+
+Figure 3. Readiness signalling sequence: host-side SLIRP acceptance at 42 ms is a false signal whose early connect loses its guest-side SYN, while the serial READY byte at 131 ms is the ground truth used by the control plane.
+
+Figure 4. Admission controller state machine: healthy growth of one slot per 0.5 s, throttle decrements of two slots per 0.5 s above PSI thresholds, and a floor state where queueing and shedding bound host contention.
+
+Figure 5. Five-arm testbed topology: one Poisson driver feeds the asyncio control plane, which launches QEMU/Nanos, Firecracker, or Podman guests while 10 Hz telemetry samples RSS, PSI, and RAPL.
+
+Figure 12. Admission floor sensitivity under swap-backed pressure at 10 rps: goodput rises 44.8, 74.9, 97.9 percent and shed falls 55.2, 25.1, 2.1 percent across floors one to three, while p50 guest ready softens from 151.04 to 244.40 ms against the uncontrolled references of 338.98 ms ready and 366.28 ms end-to-end (dashed lines).

@@ -1,0 +1,5 @@
+comparison,n_a,n_b,median_a,median_b,U,p_value
+healthy 20 rps e2e,1212,1253,123.09,123.15,759127.5,0.991419
+healthy 40 rps e2e,2378,2338,135.68,134.25,2914723.5,0.00392193
+swap pressure 10 rps ready,137,307,151.04,338.98,11351.0,9.23442e-15
+burst stress ready,40,40,206.90,380.45,15.0,4.38953e-14
